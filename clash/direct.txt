@@ -4,7 +4,7 @@ payload:
   - DOMAIN-SUFFIX,azure.com
   - DOMAIN-SUFFIX,no-mad-world.club
   - DOMAIN-SUFFIX,flingtrainer.com
-  - DOMAIN-SUFFIX,jsdeliver.net
+  - DOMAIN-SUFFIX,jsdelivr.net
    # steam
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,test.steampowered.com
