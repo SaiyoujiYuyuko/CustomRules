@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,no-mad-world.club
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
+  - DOMAIN-SUFFIX,catmjstudio.com
    # steam
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,test.steampowered.com
