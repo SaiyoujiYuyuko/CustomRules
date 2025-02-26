@@ -6,6 +6,8 @@ payload:
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
   - DOMAIN-SUFFIX,catmjstudio.com
+   # huggingface
+  - DOMAIN,cdn-lfs-us-1.hf.co
    # steam
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,test.steampowered.com
