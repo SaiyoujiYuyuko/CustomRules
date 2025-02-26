@@ -7,7 +7,7 @@ payload:
   - DOMAIN-KEYWORD,jsdelivr
   - DOMAIN-SUFFIX,catmjstudio.com
    # huggingface
-  - DOMAIN,cdn-lfs-us-1.hf.co
+  - DOMAIN-KEYWORD,cdn-lfs-us
    # steam
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,test.steampowered.com
