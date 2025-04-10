@@ -35,7 +35,7 @@ const proxyGrepConfig = [
   },
   { name: "🌓linux.do", gfw: false, payload: "DOMAIN-SUFFIX,linux.do" },
   // { name: "linux.do", gfw: false, payload: ["DOMAIN-SUFFIX,linux.do","DOMAIN-SUFFIX,linux.do"] },//例子，多个规则可以用数组 
-  { name: "🌪GitHub", gfw: false, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml" },
+  { name: "🌪GitHub", gfw: true, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml" },
   {
     name: "🎞️YouTube", gfw: true, urls: [
       "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml",
@@ -66,13 +66,13 @@ const proxyGrepConfig = [
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt",
-      "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/clash/direct.yaml"
+      "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/direct.yaml"
     ]
   },
-  { name: "🚩NoJP website", gfw: true, urls: "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/clash/NoJP.yaml" },
+  { name: "🚩NoJP website", gfw: true, urls: "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/NoJP.yaml" },
   {
     name: "🌍Foreign website", gfw: true, urls: [
-      "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/clash/proxy.yaml",
+      "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/proxy.yaml",
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
       "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt", 
