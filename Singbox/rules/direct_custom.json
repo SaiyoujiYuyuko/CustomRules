@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rules": [
+        {
+      "domain_keyword": [
+        "masuit"
+      ],
+      "domain_suffix": [
+        "163.com",
+        "okxyz.xyz",
+        "azure.com",
+        "no-mad-world.club",
+        "flingtrainer.com",
+        "yun.cat"
+       ]
+    }
+  ]
+}
