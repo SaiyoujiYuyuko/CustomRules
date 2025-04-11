@@ -56,7 +56,7 @@ const proxyGrepConfig = [
   "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Majsoul/Majsoul.yaml"
   ] },
   { name: "🎯Cloudflare", gfw: false, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cloudflare/Cloudflare.yaml" },
-    { name: "📽️Bahamut", gfw: true, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml" },
+  { name: "📽️Bahamut", gfw: true, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml" },
   { name: "📺BiliBiliIntl", gfw: true, urls: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBiliIntl/BiliBiliIntl.yaml" },
   {
     name: "🛡️Domestic website", gfw: false, urls: [
@@ -69,7 +69,8 @@ const proxyGrepConfig = [
       "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/direct.yaml"
     ]
   },
-  { name: "🚩NoJP website", gfw: true, urls: "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/NoJP.yaml" },
+  { name: "🚫🇯🇵NoJP website", gfw: true, urls: "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/NoJP.yaml" },
+  { name: "🇯🇵JP website", gfw: true, urls: "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/JP.yaml" },
   {
     name: "🌍Foreign website", gfw: true, urls: [
       "https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/proxy.yaml",
@@ -120,7 +121,7 @@ function main(config) {
     return {
       "name": name,
       "type": "select",
-      "proxies": [...addProxies, "🚀自动选择(最低延迟)", "🚀自动选择(NoJP)", "🌐负载均衡", "DIRECT"],
+      "proxies": [...addProxies, "🛩节点选择", "🚫🇯🇵自动选择(NoJP)", "🇯🇵自动选择(JP)", "DIRECT"],
       "include-all": true,
     }
   }
@@ -130,7 +131,7 @@ function main(config) {
     return {
       "name": name,
       "type": "select",
-      "proxies": [...addProxies, "DIRECT", "🚀自动选择(最低延迟)", "🌐负载均衡"],
+      "proxies": [...addProxies, "DIRECT", "🛩节点选择"],
       "include-all": true,
     }
   }
@@ -212,7 +213,7 @@ function main(config) {
       {
         "name": "🛡️国内网站",
         "type": "select",
-        "proxies": ["DIRECT", "🚀自动选择(最低延迟)", "🌐负载均衡"],
+        "proxies": ["DIRECT", "🛩节点选择"],
         "include-all": true,
         "url": "https://www.baidu.com/favicon.ico"
       },
@@ -221,14 +222,20 @@ function main(config) {
         "name": "🐟 漏网之鱼",
         "type": "select",
         "url": "https://www.bing.com/favicon.ico",
-        "proxies": ["DIRECT", "🚀自动选择(最低延迟)", "🌐负载均衡"],
+        "proxies": ["DIRECT", "🛩节点选择"],
         "include-all": true,
       },
       ...proxyGfwGroups,
       {
         "name": "🧱被墙网站",
         "type": "select",
-        "proxies": ["🚀自动选择(最低延迟)", "🌐负载均衡", "DIRECT"],
+        "proxies": ["🛩节点选择", "DIRECT"],
+        "include-all": true,
+      },
+      {
+        "name": "🛩节点选择",
+        "type": "select",
+        "proxies": ["🚀自动选择(最低延迟)", "🚫🇯🇵自动选择(NoJP)", "🌐负载均衡", "DIRECT"],
         "include-all": true,
       },
       {
@@ -239,11 +246,19 @@ function main(config) {
         "url": "https://play-lh.googleusercontent.com/1UF2WCBNl4918bNk8JsILadL9-agIjRtMpdjuPgx2ohsxnQyspdWDwYMquW1-r8mSQOSjSLOY4g=w720-rw",
       },
       {
-        "name": "🚀自动选择(NoJP)",
+        "name": "🚫🇯🇵自动选择(NoJP)",
         "type": "url-test",
         "tolerance": 20,
         "include-all": true,
         "filter": "^(?!.*(JP|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|Japan)).*",
+        "url": "https://play-lh.googleusercontent.com/1UF2WCBNl4918bNk8JsILadL9-agIjRtMpdjuPgx2ohsxnQyspdWDwYMquW1-r8mSQOSjSLOY4g=w720-rw",
+      },
+      {
+        "name": "🇯🇵自动选择(JP)",
+        "type": "url-test",
+        "tolerance": 20,
+        "include-all": true,
+        "filter": "^(?=.*(JP|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|Japan)).*",
         "url": "https://play-lh.googleusercontent.com/1UF2WCBNl4918bNk8JsILadL9-agIjRtMpdjuPgx2ohsxnQyspdWDwYMquW1-r8mSQOSjSLOY4g=w720-rw",
       },
       {
