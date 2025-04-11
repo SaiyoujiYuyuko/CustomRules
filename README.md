@@ -1,7 +1,7 @@
-```markdown
+# 自用代理配置文件
 # Proxy Suite Configuration Toolkit
 
-![GitHub release](https://img.shields.io/github/v/release/yourusername/repo)
+
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-success)
 
@@ -10,59 +10,13 @@
 ## 🌟 功能特性
 - **多协议支持**：覆盖Clash Meta内核/Mihomo、Sing-box等主流代理工具
 - **智能分流规则**：
-  - 内置广告拦截/隐私保护/反欺诈规则（基于Steven Black列表）
+  - 内置广告拦截/隐私保护规则
   - 流媒体/CDN/游戏平台智能分流
   - 支持`DOMAIN-SUFFIX`/`IP-CIDR`/`GEOIP`等多维匹配
 - **开箱即用模板**：
-  - Clash Verge扩展脚本（支持负载均衡/防封IP策略）
-  - Mihomo覆写配置文件（含订阅转换模板）
-  - Sing-box类型定义文件（TypeScript支持）
-
-## 🚀 快速开始
-### 配置文件结构
-```bash
-├── clash-verge/
-│   ├── Rules/          # 自定义规则文件
-│   └── Scripts/           # 扩展脚本（轮询/散列策略）
-├── MihomoParty/
-│   └── Scripts/           # 扩展脚本（轮询/散列策略）
-└── singbox/
-    └── Rules/         # 规则集（JSON格式）
-
-### 配置示例（Clash Verge）
-```javascript
-// 负载均衡脚本示例（clash-verge/scripts/load-balance.js）
-const groupBaseOption = {
-  "interval": 300,
-  "strategy": "round-robin",
-  "icon": "https://example.com/balance.svg"  // 自定义图标支持
-};
-```
-
-### 规则应用（Mihomo Party）
-1. 下载[覆写配置文件](https://github.com/Ckrvxr/MihomoRules/raw/main/Override/MihomoParty.yaml)
-2. 在GUI中启用`Global Application`开关
-3. 使用订阅转换模板：
-   ```bash
-   https://api.subconv.com?config=./subconverter.yaml&target=clash&url=YOUR_SUB_URL
-   ```
-
-## 🔧 高级配置
-### Sing-box规则生成
-通过JSON规则文件自动生成`.srs`配置：
-```json
-// rule-sets/game-cdn.json
-{
-  "rules": [
-    {"domain": "steamcontent.com", "outbound": "direct"},
-    {"ip-cidr": "192.0.2.0/24", "port": 443}
-  ]
-}
-```
-运行生成脚本：
-```bash
-deno run --allow-write generate-singbox-rules.ts  # 基于TypeScript类型验证
-```
+  - Clash Verge全局扩展脚本（支持负载均衡/防封IP策略）
+  - Mihomo覆写配置文件
+  - Sing-box自定义规则
 
 ## 🤝 贡献指南
 欢迎通过以下方式参与改进：
@@ -77,4 +31,7 @@ deno run --allow-write generate-singbox-rules.ts  # 基于TypeScript类型验证
 
 ---
 
-> 📌 推荐搭配工具：[Mihomo Party GUI](https://github.com/pompurin404/mihomo-party) | [Sing-box文档](https://sing-box.sagernet.org)
+> 📌 推荐搭配工具：[Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | [Mihomo Party](https://github.com/mihomo-party-org/mihomo-party) | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox)
+
+
+
