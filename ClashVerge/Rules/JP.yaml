@@ -1,4 +1,4 @@
 payload:
-  - DOMAIN,mgstage.com
-  - DOMAIN,seesaawiki.jp
-  - DOMAIN,prestige-av.com
+  - DOMAIN-SUFFIX,mgstage.com
+  - DOMAIN-SUFFIX,seesaawiki.jp
+  - DOMAIN-SUFFIX,prestige-av.com
