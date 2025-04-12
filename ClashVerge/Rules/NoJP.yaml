@@ -1,5 +1,5 @@
 payload:
-  - DOMAIN,javdb.com
-  - DOMAIN,airav.io
-  - DOMAIN,paycalling.com
-  - DOMAIN,getchu.com
+  - DOMAIN-SUFFIX,javdb.com
+  - DOMAIN-SUFFIX,airav.io
+  - DOMAIN-SUFFIX,paycalling.com
+  - DOMAIN-SUFFIX,getchu.com
