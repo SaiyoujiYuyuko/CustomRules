@@ -6,6 +6,7 @@ payload:
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
   - DOMAIN-SUFFIX,catmjstudio.com
+  - DOMAIN-REGEX,^javdb\d+\.com$
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
