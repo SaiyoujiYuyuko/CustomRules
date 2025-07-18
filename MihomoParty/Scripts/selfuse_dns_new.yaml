@@ -268,6 +268,7 @@ proxy-groups:
     type: url-test
     lazy: false
     proxies:
+      - 所有节点
       - 香港节点
       - 台湾节点
       - 狮城节点
@@ -489,6 +490,15 @@ proxy-groups:
       - 故障转移
       - 手动切换
       - DIRECT
+    url: 'https://cp.cloudflare.com/generate_204'
+  - name: 所有节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    include-all: true
+    filter: ^(?!.*((?i)(\s|-)0\.[0-9](×|x|X)|(\s|-)(([1-9](\.\d+)?)(×|x|X))|低倍率|省流|大流量|落地|家宽|自建|回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$
+    type: load-balance
+    interval: 300
+    strategy: consistent-hashing
+    hidden: true
     url: 'https://cp.cloudflare.com/generate_204'
   - name: 香港节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
