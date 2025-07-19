@@ -462,6 +462,28 @@ proxy-groups:
       - 韩国节点
       - 手动切换
     url: 'https://cp.cloudflare.com/generate_204'
+  - name: 日本网站
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 日本节点
+      - 手动切换
+    url: 'https://cp.cloudflare.com/generate_204'
+  - name: 非日本网站
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - DIRECT
+      - 非日本节点
+      - 美国节点
+      - 香港节点
+      - 台湾节点
+      - 狮城节点
+      - 韩国节点
+      - 手动切换
+    url: 'https://cp.cloudflare.com/generate_204'
   - name: 全球直连
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
@@ -807,34 +829,34 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  Custom Direct:
-    interval: 86400
-    format: text
-    type: http
+  CustomDirect:
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/direct.yaml
-    path: ./ruleset/Custom/direct.yaml  
-  Custom Proxy:
     interval: 86400
     format: text
     type: http
+    url: https://testingcf.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@main/MihomoParty/Rules/direct.list
+    path: ./ruleset/Custom/direct.list
+  CustomProxy:
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/proxy.yaml
-    path: ./ruleset/Custom/proxy.yaml
-  Custom NoJP:
     interval: 86400
     format: text
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/NoJP.yaml
-    path: ./ruleset/Custom/NoJP.yaml  
-  Custom JP:
+    url: https://testingcf.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@main/MihomoParty/Rules/proxy.list
+    path: ./ruleset/Custom/proxy.list
+  CustomNoJP:
+    behavior: classical
     interval: 86400
     format: text
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@refs/heads/main/ClashVerge/Rules/JP.yaml
-    path: ./ruleset/Custom/JP.yaml  
+    url: https://testingcf.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@main/MihomoParty/Rules/NoJP.list
+    path: ./ruleset/Custom/NoJP.list
+  CustomJP:
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/SaiyoujiYuyuko/CustomRules@main/MihomoParty/Rules/JP.list
+    path: ./ruleset/Custom/JP.list
   reject:
     interval: 86400
     format: text
@@ -934,10 +956,10 @@ rule-providers:
     path: ./ruleset/fake_ip_filter_DustinWin.mrs
     url: https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs
 rules:
-  - "RULE-SET,Custom Direct,全球直连"
-  - "RULE-SET,Custom Proxy,节点选择"
-  - "RULE-SET,Custom NoJP,非日本节点"
-  - "RULE-SET,Custom JP,日本节点"
+  - "RULE-SET,CustomDirect,全球直连"
+  - "RULE-SET,CustomProxy,节点选择"
+  - "RULE-SET,CustomNoJP,非日本网站"
+  - "RULE-SET,CustomJP,日本网站"
   - "PROCESS-NAME,steam.exe,全球直连"
   # Loyalsoldier 规则集
   - "RULE-SET,applications,全球直连"
