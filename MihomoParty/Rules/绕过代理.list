@@ -20,8 +20,6 @@ bypass:
   - 172.30.*
   - 172.31.*
   - <local>
-  - 19.25.*
-  - '*.gdsky.com.cn'
   - '*.masuit.net'
   - '*.okxyz.xyz'
   - '*.azure.com'
