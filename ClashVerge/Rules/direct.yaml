@@ -1,4 +1,6 @@
 payload:
+  - PROCESS-NAME,steam.exe
+  - PROCESS-NAME,极空间.exe
   - DOMAIN-SUFFIX,masuit.net
   - DOMAIN-SUFFIX,okxyz.xyz
   - DOMAIN-SUFFIX,azure.com
