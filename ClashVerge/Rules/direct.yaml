@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,linux.do
   - DOMAIN-REGEX,^javdb\d+\.com$
   - DOMAIN-SUFFIX,elysia.h-e.top
+  - DOMAIN-SUFFIX,instcopilot-api.com
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
