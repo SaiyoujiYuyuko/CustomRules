@@ -8,7 +8,6 @@ payload:
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
   - DOMAIN-SUFFIX,catmjstudio.com
-  - DOMAIN-SUFFIX,linux.do
   - DOMAIN-REGEX,^javdb\d+\.com$
   - DOMAIN-SUFFIX,elysia.h-e.top
   - DOMAIN-SUFFIX,instcopilot-api.com
