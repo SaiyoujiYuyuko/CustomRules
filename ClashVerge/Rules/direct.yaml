@@ -8,6 +8,8 @@ payload:
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
   - DOMAIN-KEYWORD,jrs
+  - DOMAIN-KEYWORD,sportsteam368
+  - DOMAIN-KEYWORD,yumixiu
   - DOMAIN-SUFFIX,catmjstudio.com
   - DOMAIN-REGEX,^javdb\d+\.com$
   - DOMAIN-SUFFIX,elysia.h-e.top
