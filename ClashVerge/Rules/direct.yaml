@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,no-mad-world.club
   - DOMAIN-SUFFIX,flingtrainer.com
   - DOMAIN-KEYWORD,jsdelivr
+  - DOMAIN-KEYWORD,jrs
   - DOMAIN-SUFFIX,catmjstudio.com
   - DOMAIN-REGEX,^javdb\d+\.com$
   - DOMAIN-SUFFIX,elysia.h-e.top
