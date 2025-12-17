@@ -12,9 +12,6 @@
 ```
 CustomRules/
 ├── 📁 custom-rules/              # 🎯 通用自定义规则（核心）
-│   ├── 📁 domains/              # 域名规则（直连/代理/拒绝）
-│   ├── 📁 ip-ranges/           # IP段规则
-│   └── 📁 processes/           # 进程规则
 ├── 📁 mihomo/                  # ⚡ Mihomo配置
 │   ├── 📁 scripts/             # 覆写脚本
 │   ├── 📁 overwrite-configs/   # 覆写配置文件
@@ -111,11 +108,9 @@ node tools/config-validator.js config.yaml
 ---
 
 > 📌 **推荐工具搭配**：
-> - [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) - 现代化Clash客户端
-> - [Mihomo Party](https://github.com/mihomo-party-org/mihomo-party) - 基于Clash Meta的代理工具
+> - [Sparkle](https://github.com/xishang0128/sparkle) - 基于Kotlin+Spring Boot的代理工具
 > - [FlClash](https://github.com/chen08209/FlClash) - 跨平台Clash代理客户端
 > - [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) - Sing-box图形界面
-> - [Sparkle](https://github.com/xishang0128/sparkle) - 基于Kotlin+Spring Boot的代理工具
 
 > 💡 **提示**：首次使用建议阅读 [配置使用指南](docs/config-guide.md) 了解详细使用方法。
 
