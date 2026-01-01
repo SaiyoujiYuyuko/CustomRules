@@ -17,7 +17,7 @@
         "steamuserimages"
       ],
       "domain_regex": [
-        "^javdb\d+\.com$",
+        "^javdb\\d{1,10}\\.com$"
       ],
       "domain": [
         "f3b7q2p3.ssl.hwcdn.net",
