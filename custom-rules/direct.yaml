@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,pp.ua
   - DOMAIN-SUFFIX,rjj.cc
   - DOMAIN-SUFFIX,newcli.com
+  - DOMAIN-SUFFIX,v6.army
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
