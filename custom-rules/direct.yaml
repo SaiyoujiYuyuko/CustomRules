@@ -13,6 +13,62 @@ payload:
   - DOMAIN-SUFFIX,catmjstudio.com
   - DOMAIN-REGEX,^javdb\d+\.com$
   - DOMAIN-SUFFIX,v6.army
+   # sites
+  - DOMAIN-SUFFIX,elysia.h-e.top
+  - DOMAIN-SUFFIX,instcopilot-api.com
+  - DOMAIN-SUFFIX,pp.ua
+  - DOMAIN-SUFFIX,rjj.cc
+  - DOMAIN-SUFFIX,newcli.com
+  - DOMAIN-SUFFIX,veloera.org
+  - DOMAIN-SUFFIX,zxiaoruan.cn
+  - DOMAIN-SUFFIX,5202030.xyz
+  - DOMAIN-SUFFIX,b4u.qzz.io
+  - DOMAIN-SUFFIX,feles.town
+  - DOMAIN-SUFFIX,catsapi.com
+  - DOMAIN-SUFFIX,529961.com
+  - DOMAIN-SUFFIX,wpgzs.top
+  - DOMAIN-SUFFIX,hxi.me
+  - DOMAIN-SUFFIX,voct.top
+  - DOMAIN-SUFFIX,cubence.com
+  - DOMAIN-SUFFIX,224442.xyz
+  - DOMAIN-SUFFIX,snowcli.com
+  - DOMAIN-SUFFIX,gptkey.eu.org
+  - DOMAIN-SUFFIX,duckcoding.com
+  - DOMAIN-SUFFIX,dpdns.org
+  - DOMAIN-SUFFIX,dev88.tech
+  - DOMAIN-SUFFIX,sxxe.net
+  - DOMAIN-SUFFIX,aidrouter.qzz.io
+  - DOMAIN-SUFFIX,nonocode.cn
+  - DOMAIN-SUFFIX,agentrouter.org
+  - DOMAIN-SUFFIX,184772.xyz
+  - DOMAIN-SUFFIX,xiangcao.de
+  - DOMAIN-SUFFIX,huan666.de
+  - DOMAIN-SUFFIX,square-llm.com
+  - DOMAIN-SUFFIX,huan666.de
+  - DOMAIN-SUFFIX,colin1112.me
+  - DOMAIN-SUFFIX,onrender.com
+  - DOMAIN-SUFFIX,zzhdsgsss.xyz
+  - DOMAIN-SUFFIX,123nhh.xyz
+  - DOMAIN-SUFFIX,apikey.cc
+  - DOMAIN-SUFFIX,venlacy.top
+  - DOMAIN-SUFFIX,dik3.cn
+  - DOMAIN-SUFFIX,codeqaq.com
+  - DOMAIN-SUFFIX,binklac.com
+  - DOMAIN-SUFFIX,hlwy2025.me
+  - DOMAIN-SUFFIX,freekey.site
+  - DOMAIN-SUFFIX,zone.id
+  - DOMAIN-SUFFIX,be-a.dev
+  - DOMAIN-SUFFIX,243344.xyz
+  - DOMAIN-SUFFIX,778801.xyz
+  - DOMAIN-SUFFIX,cups.moe
+  - DOMAIN-SUFFIX,nyxar.org
+  - DOMAIN-SUFFIX,hidns.co
+  - DOMAIN-SUFFIX,prism.uno
+  - DOMAIN-SUFFIX,hf.space
+  - DOMAIN-SUFFIX,shuo.bar
+  - DOMAIN-SUFFIX,wenwen12345.top
+  - DOMAIN-SUFFIX,hybgzs.com
+  - DOMAIN-SUFFIX,281182.xyz
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
