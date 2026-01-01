@@ -12,11 +12,6 @@ payload:
   - DOMAIN-KEYWORD,yumixiu
   - DOMAIN-SUFFIX,catmjstudio.com
   - DOMAIN-REGEX,^javdb\d+\.com$
-  - DOMAIN-SUFFIX,elysia.h-e.top
-  - DOMAIN-SUFFIX,instcopilot-api.com
-  - DOMAIN-SUFFIX,pp.ua
-  - DOMAIN-SUFFIX,rjj.cc
-  - DOMAIN-SUFFIX,newcli.com
   - DOMAIN-SUFFIX,v6.army
    # hltv
   - DOMAIN-SUFFIX,hltv.org
