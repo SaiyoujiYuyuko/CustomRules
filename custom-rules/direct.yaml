@@ -16,7 +16,7 @@ payload:
   - DOMAIN-SUFFIX,instcopilot-api.com
   - DOMAIN-SUFFIX,pp.ua
   - DOMAIN-SUFFIX,rjj.cc
-  - newcli.com
+  - DOMAIN-SUFFIX,newcli.com
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+      ],
+      "domain_suffix": [
+        "wmzhe.com",
+        "linux.do",
+        "ymawv.la",
+        "anyrouter.top",
+      ]
+    }
+  ]
+}
