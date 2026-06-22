@@ -69,6 +69,7 @@ payload:
   - DOMAIN-SUFFIX,wenwen12345.top
   - DOMAIN-SUFFIX,hybgzs.com
   - DOMAIN-SUFFIX,281182.xyz
+  - DOMAIN-SUFFIX,sharedchat.cc
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
