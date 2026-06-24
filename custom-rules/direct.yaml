@@ -53,6 +53,7 @@ payload:
   - DOMAIN-SUFFIX,281182.xyz
   - DOMAIN-SUFFIX,sharedchat.cc
   - DOMAIN-SUFFIX,oaifree.com
+  - DOMAIN-SUFFIX,opus.qzz.io
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
