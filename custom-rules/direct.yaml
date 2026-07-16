@@ -54,6 +54,9 @@ payload:
   - DOMAIN-SUFFIX,sharedchat.cc
   - DOMAIN-SUFFIX,oaifree.com
   - DOMAIN-SUFFIX,opus.qzz.io
+  - DOMAIN-SUFFIX,shuaiapi.com
+  - DOMAIN-SUFFIX,ark717.com
+  - DOMAIN-SUFFIX,4router.net
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
