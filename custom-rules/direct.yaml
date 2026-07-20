@@ -57,6 +57,7 @@ payload:
   - DOMAIN-SUFFIX,shuaiapi.com
   - DOMAIN-SUFFIX,ark717.com
   - DOMAIN-SUFFIX,4router.net
+  - DOMAIN-SUFFIX,aihub.top
    # hltv
   - DOMAIN-SUFFIX,hltv.org
    # huggingface
